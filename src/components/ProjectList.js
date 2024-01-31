@@ -7,12 +7,12 @@ function ProjectList({ projects }) {
     <div id="projects">
       <h2>My Projects</h2>
       <div id="project-list">
-        {projects.map((project, index) => (
+        {projects.map((projects, index) => (
           <ProjectItem
-            key={index}
-            name={project.name}
-            about={project.about}
-            technologies={project.technologies}
+            key={projects.id}
+            name={projects.name}
+            about={projects.about}
+            technologies={projects.technologies}
           />
         ))}
       </div>
